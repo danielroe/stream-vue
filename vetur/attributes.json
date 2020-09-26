@@ -3,7 +3,7 @@
     "type": "string",
     "description": "Either the video id or the signed url for the video you’ve uploaded to Cloudflare Stream should be included here."
   },
-  "video-stream/adUrl": {
+  "video-stream/ad-url": {
     "type": "string",
     "description": ""
   },
@@ -27,7 +27,7 @@
     "type": "boolean",
     "description": "Shows the default video controls such as buttons for play/pause, volume controls. You may choose to build buttons and controls that work with the player."
   },
-  "video-stream/currentTime": {
+  "video-stream/current-time": {
     "type": "number",
     "description": "Returns the current playback time in seconds. Setting this value seeks the video to a new time."
   },

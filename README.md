@@ -26,6 +26,10 @@
 
 **Note that this is not an official component.**
 
+## Features
+
+- Vetur autocomplete for props and events
+
 ## Quick Start
 
 First install `stream-vue`:

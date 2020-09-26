@@ -2,11 +2,11 @@
   "video-stream": {
     "attributes": [
       "src",
-      "adUrl",
+      "ad-url",
       "poster",
       "autoplay",
       "controls",
-      "currentTime",
+      "current-time",
       "height",
       "width",
       "muted",
