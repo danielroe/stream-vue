@@ -123,16 +123,22 @@ export default extendVue({
      * To disable video autoplay, the autoplay attribute needs to be removed altogether as this attribute. Setting autoplay="false" will not work; the video will autoplay if the attribute is there in the <stream> tag.
      *
      * In addition, some browsers now prevent videos with audio from playing automatically. You may add the mute attribute to allow your videos to autoplay. For more information, [go here](https://webkit.org/blog/6784/new-video-policies-for-ios/).
+     *
+     * @default false
      */
-    autoplay: { type: Boolean },
+    autoplay: { type: Boolean, default: false },
     /**
      * Shows the default video controls such as buttons for play/pause, volume controls. You may choose to build buttons and controls that work with the player.
+     *
+     * @default false
      */
-    controls: { type: Boolean },
+    controls: { type: Boolean, default: false },
     /**
      * Returns the current playback time in seconds. Setting this value seeks the video to a new time.
+     *
+     * @default 0
      */
-    currentTime: { type: Number },
+    currentTime: { type: Number, default: 0 },
     /**
      * The height of the video’s display area, in CSS pixels.
      */
@@ -143,12 +149,16 @@ export default extendVue({
     width: { type: [String, Number] },
     /**
      * A Boolean attribute which indicates the default setting of the audio contained in the video. If set, the audio will be initially silenced.
+     *
+     * @default false
      */
-    muted: { type: Boolean },
+    muted: { type: Boolean, default: false },
     /**
      * A Boolean attribute; if included the player will automatically seek back to the start upon reaching the end of the video.
+     *
+     * @default false
      */
-    loop: { type: Boolean },
+    loop: { type: Boolean, default: false },
     /**
      * This enumerated attribute is intended to provide a hint to the browser about what the author thinks will lead to the best user experience. You may choose to include this attribute as a boolean attribute without a value, or you may specify the value preload="auto" to preload the beginning of the video. Not including the attribute or using preload="metadata" will just load the metadata needed to start video playback when requested.
      *
@@ -163,8 +173,10 @@ export default extendVue({
     },
     /**
      * Sets volume from 0.0 (silent) to 1.0 (maximum value)
+     *
+     * @default 1
      */
-    volume: { type: Number },
+    volume: { type: Number, default: 1 },
   },
   inheritAttrs: false,
   data: () => ({
@@ -177,7 +189,28 @@ export default extendVue({
   beforeMount() {
     ;(this as any).initialiseStream()
   },
+  watch: [
+    'autoplay',
+    'controls',
+    'currentTime',
+    'muted',
+    'loop',
+    'volume',
+    'preload',
+  ].reduce((obj, prop) => {
+    obj[prop] = function (
+      this: { updateProp: (key: string, value: any) => void },
+      val: any
+    ) {
+      this.updateProp(prop, val)
+    }
+    return obj
+  }, {} as Record<string, any>),
   methods: {
+    updateProp(key: string, value: any) {
+      if (!this.$refs.stream) return
+      ;(this.$refs.stream as any)[key] = value
+    },
     initialiseStream() {
       if (!this.streamScript) {
         const streamScript = document.createElement('script')
@@ -225,6 +258,7 @@ export default extendVue({
                   'none',
           },
           on: this.$listeners,
+          ref: 'stream',
         }),
       ]
     )

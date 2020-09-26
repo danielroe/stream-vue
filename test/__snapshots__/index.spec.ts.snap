@@ -2,6 +2,6 @@
 
 exports[`stream-vue renders HTML 1`] = `
 "<div>
-  <stream src=\\"2938470a98fd7\\" preload=\\"none\\"></stream>
+  <stream src=\\"2938470a98fd7\\" currenttime=\\"0\\" volume=\\"1\\" preload=\\"none\\"></stream>
 </div>"
 `;
