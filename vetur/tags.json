@@ -1,0 +1,45 @@
+{
+  "video-stream": {
+    "attributes": [
+      "src",
+      "adUrl",
+      "poster",
+      "autoplay",
+      "controls",
+      "currentTime",
+      "height",
+      "width",
+      "muted",
+      "loop",
+      "preload",
+      "volume"
+    ],
+    "events": [
+      "abort",
+      "canplay",
+      "canplaythrough",
+      "durationchange",
+      "ended",
+      "error",
+      "loadeddata",
+      "loadedmetadata",
+      "loadstart",
+      "pause",
+      "play",
+      "playing",
+      "progress",
+      "ratechange",
+      "seeked",
+      "seeking",
+      "stalled",
+      "suspend",
+      "timeupdate",
+      "volumechange",
+      "waiting",
+      "stream-adstart",
+      "stream-adend",
+      "stream-adtimeout"
+    ],
+    "description": ""
+  }
+}

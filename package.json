@@ -1,0 +1,86 @@
+{
+  "name": "stream-vue",
+  "version": "0.1.0",
+  "description": "Cloudflare Stream component for VueJS",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "cloudflare",
+    "video",
+    "component",
+    "typescript",
+    "javascript"
+  ],
+  "repository": "danielroe/stream-vue",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Daniel Roe <daniel@roe.dev>",
+      "url": "https://github.com/danielroe"
+    }
+  ],
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "module": "lib/index.es.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*",
+    "lib/index.d.ts",
+    "!**/*.map"
+  ],
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "clean": "rm -rf lib/*",
+    "compile": "siroc build",
+    "lint": "yarn lint:all:eslint && yarn lint:all:prettier",
+    "lint:all:eslint": "yarn lint:eslint --ext .js,.ts,.vue .",
+    "lint:all:prettier": "yarn lint:prettier \"**/*.{js,json,ts}\"",
+    "lint:eslint": "eslint --fix",
+    "lint:prettier": "prettier --write --loglevel warn",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn lint && yarn test",
+    "release": "release-it",
+    "test": "yarn test:unit",
+    "test:unit": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/runtime": "^7.11.2",
+    "@release-it/conventional-changelog": "^2.0.0",
+    "@siroc/eslint-config": "^0.2.0",
+    "@siroc/jest-preset": "^0.2.0",
+    "@types/jest": "^26.0.14",
+    "@types/jsdom": "^16.2.4",
+    "@types/node": "^14.11.2",
+    "@types/webpack-env": "^1.15.3",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "@vue/test-utils": "^1.1.0",
+    "codecov": "^3.7.2",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "release-it": "14.0.3",
+    "siroc": "^0.3.1",
+    "typescript": "^4.0.3",
+    "vue": "2.6.12",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "vetur": {
+    "tags": "vetur/tags.json",
+    "attributes": "vetur/attributes.json"
+  }
+}

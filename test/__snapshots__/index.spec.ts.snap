@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`stream-vue renders HTML 1`] = `
+"<div>
+  <stream src=\\"2938470a98fd7\\" preload=\\"none\\"></stream>
+</div>"
+`;
