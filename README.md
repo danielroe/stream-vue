@@ -50,7 +50,7 @@ npm install stream-vue --save
 </template>
 
 <script>
-import VideoStream from "stream-vue"
+import { VideoStream } from 'stream-vue'
 
 export default {
   components: { VideoStream }

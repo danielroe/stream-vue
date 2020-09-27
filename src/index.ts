@@ -114,7 +114,7 @@ export type Events =
    */
   | 'stream-adtimeout'
 
-export default extendVue({
+export const VideoStream = extendVue({
   name: 'VideoStream',
   props: {
     /**
