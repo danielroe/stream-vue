@@ -1,3 +1,16 @@
+## [0.3.0](https://github.com/danielroe/stream-vue/compare/0.2.0...0.3.0) (2020-09-27)
+
+
+### Features
+
+* add support for ssr script injection using `vue-meta` ([63817d5](https://github.com/danielroe/stream-vue/commit/63817d543f6579732716dc745509de469263dcef))
+
+
+### Bug Fixes
+
+* allow class and size bindings to be correctly inherited ([72e2b00](https://github.com/danielroe/stream-vue/commit/72e2b002bafa30c42cca6286c9cc60cdf7d9ec94))
+* don't set height and width if not provided ([d967246](https://github.com/danielroe/stream-vue/commit/d96724641c3d968614ba351bb1f2fdbde80aca69))
+
 ## [0.2.0](https://github.com/danielroe/stream-vue/compare/0.1.1...0.2.0) (2020-09-26)
 
 
