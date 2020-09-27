@@ -1,4 +1,4 @@
-<h1 align="center">🟢 stream-vue</h1>
+<h1 align="center">▶️ stream-vue</h1>
 <p align="center">Vue component for Cloudflare Stream</p>
 
 <p align="center">
