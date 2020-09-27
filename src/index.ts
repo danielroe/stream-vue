@@ -235,8 +235,8 @@ export const VideoStream = extendVue({
       'div',
       {
         style: {
-          height: this.height + 'px',
-          width: this.width + 'px',
+          height: this.height ? this.height + 'px' : null,
+          width: this.width ? this.width + 'px' : null,
         },
         class: this.$attrs.class,
       },
