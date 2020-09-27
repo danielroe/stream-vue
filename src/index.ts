@@ -16,6 +16,10 @@ declare global {
   }
 }
 
+// eslint-disable-next-line
+const _Vue = require('vue')
+_Vue.config.ignoredElements = [...(_Vue.config.ignoredElements || []), 'stream']
+
 export type Events =
   /**
    * Sent when playback is aborted; for example, if the media is playing and is restarted from the beginning, this event is sent.
@@ -264,6 +268,7 @@ export const VideoStream = extendVue({
           },
           on: this.$listeners,
           ref: 'stream',
+          tag: 'stream',
         }),
       ]
     )
