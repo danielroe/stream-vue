@@ -186,7 +186,7 @@ export default extendVue({
           `script[src="${scriptLocation}"]`
         ),
   }),
-  beforeMount() {
+  mounted() {
     ;(this as any).initialiseStream()
   },
   watch: [
@@ -233,14 +233,17 @@ export default extendVue({
       'div',
       {
         style: {
-          height: this.height,
-          width: this.width,
+          height: this.height + 'px',
+          width: this.width + 'px',
         },
+        class: this.$attrs.class,
       },
       [
         h('stream', {
           attrs: {
             ...this.$attrs,
+            class: null,
+            style: null,
             autoplay: this.autoplay,
             controls: this.controls,
             currentTime: this.currentTime,

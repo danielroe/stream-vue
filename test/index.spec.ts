@@ -9,6 +9,11 @@ describe('stream-vue', () => {
         src: '2938470a98fd7',
         height: 200,
         width: 500,
+        controls: true,
+      },
+      attrs: {
+        class: 'myclass',
+        style: 'display: flex;',
       },
     })
   })
