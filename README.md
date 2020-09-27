@@ -58,7 +58,7 @@ export default {
 </script>
 ```
 
-See [@cloudflare/stream-react](https://github.com/@cloudflare/stream-react) for more props and events.
+See [@cloudflare/stream-react](https://github.com/cloudflare/stream-react) for more props and events.
 
 ## Inspirations
 
