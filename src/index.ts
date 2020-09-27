@@ -180,11 +180,7 @@ export default extendVue({
   },
   inheritAttrs: false,
   data: () => ({
-    streamScript: (process as any).server
-      ? null
-      : document.querySelector<HTMLScriptElement>(
-          `script[src="${scriptLocation}"]`
-        ),
+    streamScript: null as HTMLScriptElement | null,
   }),
   mounted() {
     ;(this as any).initialiseStream()
@@ -212,6 +208,12 @@ export default extendVue({
       ;(this.$refs.stream as any)[key] = value
     },
     initialiseStream() {
+      this.streamScript =
+        this.streamScript ||
+        document.querySelector<HTMLScriptElement>(
+          `script[src="${scriptLocation}"]`
+        )
+
       if (!this.streamScript) {
         const streamScript = document.createElement('script')
         streamScript.setAttribute('data-cfasync', 'false')
@@ -265,5 +267,29 @@ export default extendVue({
         }),
       ]
     )
+  },
+  ...{
+    head: {
+      script: [
+        {
+          src: scriptLocation,
+          'data-cfasync': false,
+          defer: true,
+          type: 'text/javascript',
+          hid: 'cloudflare-stream-script',
+        },
+      ],
+    },
+    metaInfo: {
+      script: [
+        {
+          src: scriptLocation,
+          'data-cfasync': false,
+          defer: true,
+          type: 'text/javascript',
+          vmid: 'cloudflare-stream-script',
+        },
+      ],
+    },
   },
 })
