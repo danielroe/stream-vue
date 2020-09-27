@@ -1,5 +1,5 @@
 import { mount, Wrapper } from '@vue/test-utils'
-import VideoStream from '../src'
+import { VideoStream } from '../src'
 
 describe('stream-vue', () => {
   let wrapper: Wrapper<Vue>
