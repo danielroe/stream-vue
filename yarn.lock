@@ -1950,14 +1950,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jsdom@npm:^16.2.5":
-  version: 16.2.5
-  resolution: "@types/jsdom@npm:16.2.5"
+"@types/jsdom@npm:^16.2.6":
+  version: 16.2.6
+  resolution: "@types/jsdom@npm:16.2.6"
   dependencies:
     "@types/node": "*"
     "@types/parse5": "*"
     "@types/tough-cookie": "*"
-  checksum: 374b6b90e4c29cb4d2afbf77d182152a26c35bd64d3b6389cf31d78075e00a1950758ade77b7b92e43bf7609a2d2570de6511d7dca8920446bb894c80d633f6f
+  checksum: 64252ba056a916c434ce121d250ca0327ae2362808b1eb1a652b49801e7a0c36e5f0f8b06b25fee5203e6bf8f4af1d7e0a0c2b3ec6cd5e084f01b22d6f7b22b8
   languageName: node
   linkType: hard
 
@@ -9526,7 +9526,7 @@ __metadata:
     "@siroc/eslint-config": ^0.2.0
     "@siroc/jest-preset": ^0.2.0
     "@types/jest": ^26.0.20
-    "@types/jsdom": ^16.2.5
+    "@types/jsdom": ^16.2.6
     "@types/node": ^14.14.20
     "@types/webpack-env": ^1.16.0
     "@typescript-eslint/eslint-plugin": ^4.13.0
