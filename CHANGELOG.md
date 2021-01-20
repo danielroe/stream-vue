@@ -1,3 +1,10 @@
+### [0.3.3](https://github.com/danielroe/stream-vue/compare/0.3.2...0.3.3) (2021-01-20)
+
+
+### Bug Fixes
+
+* don't replace `Vue.config` completely ([abc02d8](https://github.com/danielroe/stream-vue/commit/abc02d84c29a27fdce3ad554b87ed323a5d0c965))
+
 ### [0.3.2](https://github.com/danielroe/stream-vue/compare/0.3.1...0.3.2) (2021-01-20)
 
 
