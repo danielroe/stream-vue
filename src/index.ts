@@ -18,6 +18,7 @@ declare global {
 
 // eslint-disable-next-line
 const _Vue = require('vue')
+_Vue.config = _Vue.config || {}
 _Vue.config.ignoredElements = [...(_Vue.config.ignoredElements || []), 'stream']
 
 export type Events =

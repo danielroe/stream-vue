@@ -58,6 +58,17 @@ export default {
 </script>
 ```
 
+### Nuxt support
+
+To use with Nuxt, make sure to add the following to your `nuxt.config.js`:
+```js
+  vue: {
+    config: {
+      ignoredElements: ['stream']
+    }
+  }
+```
+
 See [@cloudflare/stream-react](https://github.com/cloudflare/stream-react) for more props and events.
 
 ## Inspirations
