@@ -13,12 +13,10 @@
   ],
   "repository": "danielroe/stream-vue",
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "Daniel Roe <daniel@roe.dev>",
-      "url": "https://github.com/danielroe"
-    }
-  ],
+  "author": {
+    "name": "Daniel Roe <daniel@roe.dev>",
+    "url": "https://github.com/danielroe"
+  },
   "sideEffects": false,
   "main": "lib/index.js",
   "module": "lib/index.es.js",
