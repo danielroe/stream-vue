@@ -2001,10 +2001,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>= 8, @types/node@npm:^14.14.27":
-  version: 14.14.27
-  resolution: "@types/node@npm:14.14.27"
-  checksum: efc78cf6e698e09925a2542bbea932dfe092408f4ce39b8f260b71df502221d76c925fd3227bc1f7427edd9cfb6f8c81c68a56b9ab690f08425e7e6e177e61e0
+"@types/node@npm:*, @types/node@npm:>= 8, @types/node@npm:^14.14.28":
+  version: 14.14.28
+  resolution: "@types/node@npm:14.14.28"
+  checksum: e750df4d5e93c639d04100e7d54d9e416ecc649d4d7951ac1d5b82d092c556f6e7775a191995e06d6def65ae7bc25533d188fe122dc660724d119ce3ddae2cea
   languageName: node
   linkType: hard
 
@@ -9152,9 +9152,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"siroc@npm:^0.6.5":
-  version: 0.6.5
-  resolution: "siroc@npm:0.6.5"
+"siroc@npm:^0.6.6":
+  version: 0.6.6
+  resolution: "siroc@npm:0.6.6"
   dependencies:
     "@rollup/plugin-alias": ^3.1.2
     "@rollup/plugin-commonjs": ^17.1.0
@@ -9180,7 +9180,7 @@ __metadata:
   bin:
     siroc: bin/cli.js
     siroc-runner: bin/runtime.js
-  checksum: 60efe17d9efffbcde229ce0205a56b888223fdb7b2a2d417751e3e1175866522575d2f24053871db90577e75ea6282bcba62286f37396f53929f02b16b6bb734
+  checksum: 0a61567007a7ef7b3a41d4979b183a8352246744415ec286e2adb3658ac1fccdb6b5b64c5d8db6bc107dc52ee4c70433028128f295896cc4a0b7c671c101116d
   languageName: node
   linkType: hard
 
@@ -9475,7 +9475,7 @@ __metadata:
     "@siroc/jest-preset": ^0.2.0
     "@types/jest": ^26.0.20
     "@types/jsdom": ^16.2.6
-    "@types/node": ^14.14.27
+    "@types/node": ^14.14.28
     "@types/webpack-env": ^1.16.0
     "@typescript-eslint/eslint-plugin": ^4.15.0
     "@typescript-eslint/parser": ^4.15.0
@@ -9492,7 +9492,7 @@ __metadata:
     prettier: ^2.2.1
     release-it: 14.4.0
     semver: ^7.3.4
-    siroc: ^0.6.5
+    siroc: ^0.6.6
     typescript: ^4.1.5
     vue: 2.6.12
     vue-template-compiler: ^2.6.12
