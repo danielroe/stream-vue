@@ -2054,10 +2054,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/openapi-types@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "@octokit/openapi-types@npm:6.0.0"
-  checksum: a748ee26656a1b2a5a5d616b1a3749ef5a9f858ad0eac21dbe8c51fef84560d5171b8d4969f86edf7339ebdd58726948b8d2354b6e40fc31c8289a5d8a3f4d50
+"@octokit/openapi-types@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "@octokit/openapi-types@npm:7.0.0"
+  checksum: 703727ff2e1956c353350628cdbc54f7c206cd363908b887b632c7b7c8840e7d25528442485f77d3c7059c85ed3797de9083fdfd036b1d8f752bbd1bb12979ec
   languageName: node
   linkType: hard
 
@@ -2081,15 +2081,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/plugin-rest-endpoint-methods@npm:5.0.0":
-  version: 5.0.0
-  resolution: "@octokit/plugin-rest-endpoint-methods@npm:5.0.0"
+"@octokit/plugin-rest-endpoint-methods@npm:5.0.1":
+  version: 5.0.1
+  resolution: "@octokit/plugin-rest-endpoint-methods@npm:5.0.1"
   dependencies:
-    "@octokit/types": ^6.13.0
+    "@octokit/types": ^6.13.1
     deprecation: ^2.3.1
   peerDependencies:
     "@octokit/core": ">=3"
-  checksum: bd9a3ebd8164d8a1ecc1d10d41f00852763afef19acce816a05b4ab1e3200ae3738e87d6c2e6a8123940421bfcf43d371a4d734ce12021bf7ba675fd72617f92
+  checksum: 8d4614a212d9c5cca7e360080b929ca1d2a3fa0099e59bbb8fbdb3f8b522e4a34171a8c12fe8588facf2fb819e30eddfcd3bd22f40f1a0d2002551b7a6bdce32
   languageName: node
   linkType: hard
 
@@ -2120,15 +2120,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/rest@npm:18.5.2":
-  version: 18.5.2
-  resolution: "@octokit/rest@npm:18.5.2"
+"@octokit/rest@npm:18.5.3":
+  version: 18.5.3
+  resolution: "@octokit/rest@npm:18.5.3"
   dependencies:
     "@octokit/core": ^3.2.3
     "@octokit/plugin-paginate-rest": ^2.6.2
     "@octokit/plugin-request-log": ^1.0.2
-    "@octokit/plugin-rest-endpoint-methods": 5.0.0
-  checksum: b6c8ee91fb5d59a3a6d9a107bacb93c5b2578c15bf6af6b3900f2045653870c57ed3a4e9318069cd1b21261f75193d48a10bb9276477be8a614e73e7fe2cede7
+    "@octokit/plugin-rest-endpoint-methods": 5.0.1
+  checksum: b7a39e556da48ca1c8517cc34bfa05b6831f32035be8b6f35209af295d9ba848211ed18e94449cfb71964de7d2d6b0803702d5a8f04b1a703f57261d02e42031
   languageName: node
   linkType: hard
 
@@ -2150,12 +2150,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/types@npm:^6.13.0":
-  version: 6.13.0
-  resolution: "@octokit/types@npm:6.13.0"
+"@octokit/types@npm:^6.13.1":
+  version: 6.14.2
+  resolution: "@octokit/types@npm:6.14.2"
   dependencies:
-    "@octokit/openapi-types": ^6.0.0
-  checksum: 20e7f159be0ebd386291b8e37521f191ca1adc922e2096b6f1434e980336f3a5ee4073bc0e99a8bb91e1657c4a8a1671ce458fbe299d918d773bd4bcf7cb8f5c
+    "@octokit/openapi-types": ^7.0.0
+  checksum: b717cb855c7ea65b721452e278d6543a0cbe9729f9dc1fa02da93d726202e6526f95f21870ef0c67d7dceeb769e4ff183f650f362aceb6bd6b766caa781ca025
   languageName: node
   linkType: hard
 
@@ -3783,13 +3783,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:4.1.0, chalk@npm:^4.0.0, chalk@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "chalk@npm:4.1.0"
+"chalk@npm:4.1.1":
+  version: 4.1.1
+  resolution: "chalk@npm:4.1.1"
   dependencies:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
-  checksum: f860285b419f9e925c2db0f45ffa88aa8794c14b80cc5d01ff30930bcfc384996606362706f0829cf557f6d36152a5fb2d227ad63c4bc90e2ec9e9dbed4a3c07
+  checksum: 445c12db7aeed0046500a1e4184d31209a77d165654c885a789c41c8598a6a95bd2392180987cac572c967b93a2a730dda778bb7f87fa06ca63fd8592f8cc59f
   languageName: node
   linkType: hard
 
@@ -3801,6 +3801,16 @@ __metadata:
     escape-string-regexp: ^1.0.5
     supports-color: ^5.3.0
   checksum: 22c7b7b5bc761c882bb6516454a1a671923f1c53ff972860065aa0b28a195f230163c1d46ee88bcc7a03e5539177d896457d8bc727de7f244c6e87032743038e
+  languageName: node
+  linkType: hard
+
+"chalk@npm:^4.0.0, chalk@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "chalk@npm:4.1.0"
+  dependencies:
+    ansi-styles: ^4.1.0
+    supports-color: ^7.1.0
+  checksum: f860285b419f9e925c2db0f45ffa88aa8794c14b80cc5d01ff30930bcfc384996606362706f0829cf557f6d36152a5fb2d227ad63c4bc90e2ec9e9dbed4a3c07
   languageName: node
   linkType: hard
 
@@ -9469,14 +9479,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"release-it@npm:14.6.1":
-  version: 14.6.1
-  resolution: "release-it@npm:14.6.1"
+"release-it@npm:14.6.2":
+  version: 14.6.2
+  resolution: "release-it@npm:14.6.2"
   dependencies:
     "@iarna/toml": 2.2.5
-    "@octokit/rest": 18.5.2
+    "@octokit/rest": 18.5.3
     async-retry: 1.3.1
-    chalk: 4.1.0
+    chalk: 4.1.1
     cosmiconfig: 7.0.0
     debug: 4.3.1
     deprecated-obj: 2.0.0
@@ -9503,7 +9513,7 @@ __metadata:
     yargs-parser: 20.2.7
   bin:
     release-it: bin/release-it.js
-  checksum: 88c8d50d590faa1d5f5a8494487bb2805509471b5a1228aef5f9ef5d53a1edb8784cbce33e1f9fcfe714a9f1fb38705b8f37933cfa6ca36b47234169b2d8e812
+  checksum: e645603d6360eaf619e8d249f06cba2b0d924ba15c050639368d0d8ed1c94d5328b04f58717113f74e2d1200d4b0c3fc09a5de27244ead4989239b572c316448
   languageName: node
   linkType: hard
 
@@ -10371,7 +10381,7 @@ __metadata:
     jest: ^26.6.3
     lint-staged: ^10.5.4
     prettier: ^2.2.1
-    release-it: 14.6.1
+    release-it: 14.6.2
     semver: ^7.3.5
     siroc: ^0.9.2
     typescript: ^4.2.4
