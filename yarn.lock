@@ -2372,17 +2372,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@release-it/conventional-changelog@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@release-it/conventional-changelog@npm:2.0.1"
+"@release-it/conventional-changelog@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "@release-it/conventional-changelog@npm:3.3.0"
   dependencies:
     concat-stream: ^2.0.0
     conventional-changelog: ^3.1.24
     conventional-recommended-bump: ^6.1.0
     prepend-file: ^2.0.0
   peerDependencies:
-    release-it: ^14.0.0
-  checksum: 6ac606401657ceaa4ae5f4b50afae84f727aadd3c1f281670746a5dc9ba0812edc88498d1cc0c9194a7e842b766e1de22a825c78a8f35ab33cf447fefdde76f9
+    release-it: ^14.11.5
+  checksum: 948e2620efc8b02e264aa6b253528542f4e89c196a2bea83a19d4fa209d7d8a934acffe238066069732fabc500d4c2844d8b59f7db5a87b51a5fdd1aebf9720c
   languageName: node
   linkType: hard
 
@@ -10606,7 +10606,7 @@ __metadata:
     "@babel/preset-env": ^7.14.2
     "@babel/preset-typescript": ^7.13.0
     "@babel/runtime": ^7.14.0
-    "@release-it/conventional-changelog": ^2.0.1
+    "@release-it/conventional-changelog": ^3.3.0
     "@siroc/eslint-config": ^0.2.0
     "@siroc/jest-preset": ^0.2.0
     "@types/jest": ^26.0.23
