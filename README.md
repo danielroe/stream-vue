@@ -73,7 +73,7 @@ See [@cloudflare/stream-react](https://github.com/cloudflare/stream-react) for m
 
 ## Inspirations
 
-This is just a Vue fork of [@cloudflare/stream-react](https://github.com/@cloudflare/stream-react).
+This is just a Vue fork of [@cloudflare/stream-react](https://github.com/cloudflare/stream-react).
 
 ## Contributors
 
