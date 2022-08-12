@@ -2760,10 +2760,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^14.14.45":
-  version: 14.14.45
-  resolution: "@types/node@npm:14.14.45"
-  checksum: b9ad381a8cc5273bfd75d5870f57eed2b0978a5afe9e7e0347fcdb955e9fed502277a374c2837c3e1fe6a7ade58d53a460d954dbbe50e2f18bdd7e86075ffca9
+"@types/node@npm:^16.11.48":
+  version: 16.11.48
+  resolution: "@types/node@npm:16.11.48"
+  checksum: 8d06a9d2c2f8a671ce3381c1d79c288f23e1ba1b26c0c60d45520230d2975a3173a12f2fc4d10ab415530e099120ec319c21d09953e72860f5796ecaa0d51e08
   languageName: node
   linkType: hard
 
@@ -10713,7 +10713,7 @@ __metadata:
     "@siroc/jest-preset": ^0.2.0
     "@types/jest": ^26.0.23
     "@types/jsdom": ^16.2.10
-    "@types/node": ^14.14.45
+    "@types/node": ^16.11.48
     "@types/webpack-env": ^1.16.0
     "@typescript-eslint/eslint-plugin": ^4.23.0
     "@typescript-eslint/parser": ^4.23.0
