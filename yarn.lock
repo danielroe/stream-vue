@@ -2372,17 +2372,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@release-it/conventional-changelog@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@release-it/conventional-changelog@npm:2.0.1"
+"@release-it/conventional-changelog@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "@release-it/conventional-changelog@npm:5.1.1"
   dependencies:
     concat-stream: ^2.0.0
-    conventional-changelog: ^3.1.24
+    conventional-changelog: ^3.1.25
     conventional-recommended-bump: ^6.1.0
-    prepend-file: ^2.0.0
+    semver: 7.3.8
   peerDependencies:
-    release-it: ^14.0.0
-  checksum: 6ac606401657ceaa4ae5f4b50afae84f727aadd3c1f281670746a5dc9ba0812edc88498d1cc0c9194a7e842b766e1de22a825c78a8f35ab33cf447fefdde76f9
+    release-it: ^15.4.1
+  checksum: b47ec7d7c18d4129510de5c653f430c88d6e906069f60ff60077fcaffa9780d1f3343dd9b1cdad92ef78f40ab1bdcf85159fcc57aa59ecd463cbe092015a89d5
   languageName: node
   linkType: hard
 
@@ -4508,9 +4508,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog@npm:^3.1.24":
-  version: 3.1.24
-  resolution: "conventional-changelog@npm:3.1.24"
+"conventional-changelog@npm:^3.1.25":
+  version: 3.1.25
+  resolution: "conventional-changelog@npm:3.1.25"
   dependencies:
     conventional-changelog-angular: ^5.0.12
     conventional-changelog-atom: ^2.0.8
@@ -4523,7 +4523,7 @@ __metadata:
     conventional-changelog-jquery: ^3.0.11
     conventional-changelog-jshint: ^2.0.9
     conventional-changelog-preset-loader: ^2.3.4
-  checksum: bf255c433c2fa99269786ca9606ac75f313b46a9a1d109e4cc63d9d5df0a553575edbf08ca8c889c17701e92c63a98865c06f387b1aa9a5cf76b3e175fb7fe00
+  checksum: 3d8875f8a6c755715122a064ef868f1e73892828d33316b14a6ac148b74a4c55137da55eba491d87768725de3381d6bdf3ae36f30bba3a0b11b1471054324e2c
   languageName: node
   linkType: hard
 
@@ -6335,7 +6335,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graceful-fs@npm:^4.1.15, graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.1.6, graceful-fs@npm:^4.2.0, graceful-fs@npm:^4.2.3, graceful-fs@npm:^4.2.4":
+"graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.1.6, graceful-fs@npm:^4.2.0, graceful-fs@npm:^4.2.3, graceful-fs@npm:^4.2.4":
   version: 4.2.4
   resolution: "graceful-fs@npm:4.2.4"
   checksum: d095ee4dc6eacc76814cd52d5d185b860119378a6fd4888e7d4e94983095c54d4f6369942a5e3d759cdbdd4e3ee7eaeb27a39ff938c6ee4610894fd9de46b6cb
@@ -9428,16 +9428,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prepend-file@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "prepend-file@npm:2.0.0"
-  dependencies:
-    path-exists: ^4.0.0
-    temp-write: ^4.0.0
-  checksum: aaa45de1fa0864b5315434cf90e00184a5eba44d3c4a9d284f92c872a6fe9b47780b041c7739d8c4ba69e7d84a110759c8dd985a515178d9266e01ad628f889d
-  languageName: node
-  linkType: hard
-
 "prepend-http@npm:^2.0.0":
   version: 2.0.0
   resolution: "prepend-http@npm:2.0.0"
@@ -10282,6 +10272,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"semver@npm:7.3.8":
+  version: 7.3.8
+  resolution: "semver@npm:7.3.8"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: cfb9c2101dae4ee93c415471f48797c750174d65def4e06ff691bf910194cc6ca92793e597be8302175ceb640100a3da36451e7656320da53b51167eeaf11eb5
+  languageName: node
+  linkType: hard
+
 "semver@npm:^6.0.0, semver@npm:^6.1.1, semver@npm:^6.1.2, semver@npm:^6.2.0, semver@npm:^6.3.0":
   version: 6.3.0
   resolution: "semver@npm:6.3.0"
@@ -10717,7 +10718,7 @@ __metadata:
     "@babel/preset-env": ^7.14.2
     "@babel/preset-typescript": ^7.13.0
     "@babel/runtime": ^7.14.0
-    "@release-it/conventional-changelog": ^2.0.1
+    "@release-it/conventional-changelog": ^5.1.1
     "@siroc/eslint-config": ^0.2.0
     "@siroc/jest-preset": ^0.2.0
     "@types/jest": ^26.0.23
@@ -11001,26 +11002,6 @@ __metadata:
     stream-events: ^1.0.5
     uuid: ^8.0.0
   checksum: d62a642f1b72b898e7479acf95e9e40252c6808ed259c6e2537d85dd444b8beb461fcd08a6d8c37482ea58906014a9dc4d89c3ac673d1ef0de0f20ee8ee0c8ae
-  languageName: node
-  linkType: hard
-
-"temp-dir@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "temp-dir@npm:1.0.0"
-  checksum: 4cc703b6ac3a3989c9da69c1b861babddff5e14a7913c26b4933049983a2d8392d3c6bbfa4bbd2ec4b9762a2460e8e7599f827dbc7c8ef1662e6e905d0f92b0b
-  languageName: node
-  linkType: hard
-
-"temp-write@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "temp-write@npm:4.0.0"
-  dependencies:
-    graceful-fs: ^4.1.15
-    is-stream: ^2.0.0
-    make-dir: ^3.0.0
-    temp-dir: ^1.0.0
-    uuid: ^3.3.2
-  checksum: 1cf422f33ef2b779fc29714597ec31006d0f8e0612cb9c6227e57686ca297d0584cf0025cfaf96be947c55f201016534845a52c84a712d79a90a3a6e16ed2705
   languageName: node
   linkType: hard
 
