@@ -62,7 +62,7 @@
     "@types/webpack-env": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
-    "@vue/test-utils": "^1.2.0",
+    "@vue/test-utils": "^2.2.1",
     "codecov": "^3.8.2",
     "conventional-changelog-conventionalcommits": "^4.6.0",
     "eslint": "^7.26.0",
