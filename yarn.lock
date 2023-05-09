@@ -4401,14 +4401,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^4.6.0":
-  version: 4.6.0
-  resolution: "conventional-changelog-conventionalcommits@npm:4.6.0"
+"conventional-changelog-conventionalcommits@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "conventional-changelog-conventionalcommits@npm:5.0.0"
   dependencies:
     compare-func: ^2.0.0
     lodash: ^4.17.15
     q: ^1.5.1
-  checksum: 60114ccba24cb59c0cd4afd4974998343f21313d447f854a2b9403396405b9cf539747b2aa4b4c8e3c6360fcfd5d00961d23d8e74306f0536afcfe165eaee54e
+  checksum: 757fb714e3fbcd182fa2fe5d31b992f27afa8f329e7e107dfb37ec9c591c0a6066116226ea7a945c7c106491d9f2ab544ec37cdc96b9ee2f09985c7e3afeae24
   languageName: node
   linkType: hard
 
@@ -10729,7 +10729,7 @@ __metadata:
     "@typescript-eslint/parser": ^4.23.0
     "@vue/test-utils": ^1.2.0
     codecov: ^3.8.2
-    conventional-changelog-conventionalcommits: ^4.6.0
+    conventional-changelog-conventionalcommits: ^5.0.0
     eslint: ^7.26.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-jest: ^26.5.3
