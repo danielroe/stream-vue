@@ -57,7 +57,7 @@
     "@siroc/eslint-config": "^0.2.0",
     "@siroc/jest-preset": "^0.2.0",
     "@types/jest": "^26.0.23",
-    "@types/jsdom": "^20.0.0",
+    "@types/jsdom": "^21.1.1",
     "@types/node": "^18.15.11",
     "@types/webpack-env": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^4.23.0",

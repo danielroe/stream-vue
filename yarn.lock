@@ -2705,14 +2705,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jsdom@npm:^20.0.0":
-  version: 20.0.0
-  resolution: "@types/jsdom@npm:20.0.0"
+"@types/jsdom@npm:^21.1.1":
+  version: 21.1.1
+  resolution: "@types/jsdom@npm:21.1.1"
   dependencies:
     "@types/node": "*"
     "@types/tough-cookie": "*"
     parse5: ^7.0.0
-  checksum: d26965ea0016df7bfa8c5e5e51691fff34a7fb161512ced8d535f0cbd2a66f83bd4d0e12c8a21375bf28aae99566470bd67203b598ea01a0e929625187db4ecc
+  checksum: 95d62c74fc6532bf2d7203ee73505cf8e66cadd2c094c3cc98b681bbde2153b1a7b8db45113775d133290c46ef5ca74d21b20a2f058fed14066af9e78de8f590
   languageName: node
   linkType: hard
 
@@ -10722,7 +10722,7 @@ __metadata:
     "@siroc/eslint-config": ^0.2.0
     "@siroc/jest-preset": ^0.2.0
     "@types/jest": ^26.0.23
-    "@types/jsdom": ^20.0.0
+    "@types/jsdom": ^21.1.1
     "@types/node": ^18.15.11
     "@types/webpack-env": ^1.16.0
     "@typescript-eslint/eslint-plugin": ^4.23.0
