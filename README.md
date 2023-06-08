@@ -11,15 +11,6 @@
 <a href="https://npmjs.com/package/stream-vue">
     <img alt="" src="https://img.shields.io/npm/dt/stream-vue.svg?style=flat-square">
 </a>
-<a href="https://lgtm.com/projects/g/danielroe/stream-vue">
-    <img alt="" src="https://img.shields.io/lgtm/alerts/github/danielroe/stream-vue?style=flat-square">
-</a>
-<a href="https://lgtm.com/projects/g/danielroe/stream-vue">
-    <img alt="" src="https://img.shields.io/lgtm/grade/javascript/github/danielroe/stream-vue?style=flat-square">
-</a>
-<a href="https://david-dm.org/danielroe/stream-vue">
-    <img alt="" src="https://img.shields.io/david/danielroe/stream-vue.svg?style=flat-square">
-</a>
 </p>
 
 > Vue component for [Cloudflare Stream](https://www.cloudflare.com/products/cloudflare-stream/).
@@ -35,10 +26,10 @@
 First install `stream-vue`:
 
 ```bash
+pnpm add stream-vue
+
+# or
 yarn add stream-vue
-
-# or npm
-
 npm install stream-vue --save
 ```
 
@@ -60,7 +51,7 @@ export default {
 
 ### Nuxt support
 
-To use with Nuxt, make sure to add the following to your `nuxt.config.js`:
+To use with Nuxt 2, make sure to add the following to your `nuxt.config.js`:
 ```js
   vue: {
     config: {
