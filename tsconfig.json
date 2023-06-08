@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "sourceMap": true,
     "target": "esnext",
@@ -7,11 +8,11 @@
     "lib": ["esnext", "dom"],
     "moduleResolution": "node",
     "rootDir": "src",
-    "outDir": "lib",
+    "outDir": "dist",
     "declaration": true,
     "skipLibCheck": true,
     "types": ["node"],
     "allowSyntheticDefaultImports": true
   },
-  "exclude": ["node_modules", "lib", "test"]
+  "exclude": ["node_modules", "dist", "test"]
 }
