@@ -77,6 +77,9 @@
     "vue": "2.7.14",
     "vue-template-compiler": "^2.7.14"
   },
+  "peerDependencies": {
+    "vue": "^2.6.0"
+  },
   "build": {
     "externals": [
       "vue"
