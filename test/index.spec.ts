@@ -1,4 +1,8 @@
-import { mount, Wrapper } from '@vue/test-utils'
+/** @vitest-environment jsdom */
+
+import { describe, beforeEach, expect, it } from 'vitest'
+import { mount } from '@vue/test-utils'
+import type { Wrapper } from '@vue/test-utils'
 import { VideoStream } from '../src'
 
 describe('stream-vue', () => {

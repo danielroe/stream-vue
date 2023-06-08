@@ -1,6 +1,6 @@
 import type Vue from 'vue'
 
-const extendVue: typeof Vue['extend'] = (options: any) => options
+const extendVue: (typeof Vue)['extend'] = (options: any) => options
 
 const scriptLocation =
   'https://embed.videodelivery.net/embed/r4xu.fla9.latest.js'
@@ -174,7 +174,7 @@ export const VideoStream = extendVue({
      * The <video> element does not force the browser to follow the value of this attribute; it is a mere hint. Even though the preload="none" option is a valid HTML5 attribute, Stream player will always load some metadata to initialize the player. The amount of data loaded in this case is negligable.
      */
     preload: {
-      type: ([String, Boolean] as unknown) as () =>
+      type: [String, Boolean] as unknown as () =>
         | 'auto'
         | 'metadata'
         | 'none'
