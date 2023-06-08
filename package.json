@@ -18,19 +18,17 @@
     "url": "https://github.com/danielroe"
   },
   "sideEffects": false,
-  "main": "lib/index.js",
-  "module": "lib/index.es.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
-    "lib/**/*",
-    "lib/index.d.ts",
+    "dist/**/*",
+    "dist/index.d.ts",
     "vetur/**/*",
     "!**/*.map"
   ],
   "scripts": {
-    "build": "pnpm clean && pnpm compile",
-    "clean": "rm -rf lib/*",
-    "compile": "siroc build",
+    "build": "unbuild",
     "lint": "pnpm lint:all:eslint && pnpm lint:all:prettier",
     "lint:all:eslint": "pnpm lint:eslint --ext .js,.ts,.vue .",
     "lint:all:prettier": "pnpm lint:prettier \"**/*.{js,json,ts}\"",
@@ -73,12 +71,16 @@
     "jest": "^29.5.0",
     "lint-staged": "^11.2.6",
     "prettier": "^2.8.8",
-    "semver": "^7.5.1",
-    "siroc": "^0.10.0",
     "typescript": "^4.2.4",
+    "unbuild": "^1.2.1",
     "vitest": "^0.32.0",
     "vue": "2.7.14",
     "vue-template-compiler": "^2.7.14"
+  },
+  "build": {
+    "externals": [
+      "vue"
+    ]
   },
   "packageManager": "pnpm@8.6.1",
   "vetur": {
