@@ -55,7 +55,7 @@
     "@vue/test-utils": "1.3.6",
     "bumpp": "9.1.1",
     "eslint": "8.45.0",
-    "eslint-config-prettier": "8.8.0",
+    "eslint-config-prettier": "8.9.0",
     "eslint-plugin-prettier": "4.2.1",
     "husky": "8.0.3",
     "jsdom": "22.1.0",
