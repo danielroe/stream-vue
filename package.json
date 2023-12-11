@@ -62,7 +62,7 @@
     "lint-staged": "13.3.0",
     "prettier": "2.8.8",
     "typescript": "5.1.6",
-    "unbuild": "1.2.1",
+    "unbuild": "2.0.0",
     "vitest": "0.34.6",
     "vue": "2.7.14",
     "vue-template-compiler": "2.7.14"
