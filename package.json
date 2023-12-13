@@ -64,7 +64,7 @@
     "typescript": "5.1.6",
     "unbuild": "2.0.0",
     "vitest": "0.34.6",
-    "vue": "2.7.14",
+    "vue": "2.7.15",
     "vue-template-compiler": "2.7.14"
   },
   "peerDependencies": {
