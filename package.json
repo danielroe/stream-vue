@@ -61,11 +61,11 @@
     "jsdom": "22.1.0",
     "lint-staged": "15.2.0",
     "prettier": "2.8.8",
-    "typescript": "5.1.6",
+    "typescript": "5.3.3",
     "unbuild": "2.0.0",
     "vitest": "0.34.6",
-    "vue": "2.7.14",
-    "vue-template-compiler": "2.7.14"
+    "vue": "2.7.15",
+    "vue-template-compiler": "2.7.15"
   },
   "peerDependencies": {
     "vue": "^2.6.0"
@@ -75,7 +75,7 @@
       "vue"
     ]
   },
-  "packageManager": "pnpm@8.11.0",
+  "packageManager": "pnpm@8.12.0",
   "vetur": {
     "tags": "vetur/tags.json",
     "attributes": "vetur/attributes.json"
