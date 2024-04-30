@@ -75,7 +75,7 @@
       "vue"
     ]
   },
-  "packageManager": "pnpm@8.12.0",
+  "packageManager": "pnpm@8.15.8",
   "vetur": {
     "tags": "vetur/tags.json",
     "attributes": "vetur/attributes.json"
