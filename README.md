@@ -36,10 +36,6 @@ npm install stream-vue --save
 ## Usage
 
 ```vue
-<template>
-  <VideoStream controls src="YOUR_VIDEO_ID_OR_SIGNED_URL">
-</template>
-
 <script>
 import { VideoStream } from 'stream-vue'
 
@@ -47,17 +43,21 @@ export default {
   components: { VideoStream }
 }
 </script>
+
+<template>
+  <VideoStream controls src="YOUR_VIDEO_ID_OR_SIGNED_URL" />
+</template>
 ```
 
 ### Nuxt support
 
 To use with Nuxt 2, make sure to add the following to your `nuxt.config.js`:
 ```js
-  vue: {
-    config: {
-      ignoredElements: ['stream']
-    }
+vue: {
+  config: {
+    ignoredElements: ['stream']
   }
+}
 ```
 
 See [@cloudflare/stream-react](https://github.com/cloudflare/stream-react) for more props and events.

@@ -2,8 +2,8 @@ import type Vue from 'vue'
 
 const extendVue: (typeof Vue)['extend'] = (options: any) => options
 
-const scriptLocation =
-  'https://embed.videodelivery.net/embed/r4xu.fla9.latest.js'
+const scriptLocation
+  = 'https://embed.videodelivery.net/embed/r4xu.fla9.latest.js'
 
 export type HTMLStreamElement = HTMLVideoElement
 
@@ -16,8 +16,9 @@ declare global {
   }
 }
 
-// eslint-disable-next-line
+// eslint-disable-next-line ts/no-require-imports,ts/no-var-requires
 const _Vue = require('vue')
+
 if (_Vue.config) {
   _Vue.config.ignoredElements = [
     ...(_Vue.config.ignoredElements || []),
@@ -205,7 +206,7 @@ export const VideoStream = extendVue({
   ].reduce((obj, prop) => {
     obj[prop] = function (
       this: { updateProp: (key: string, value: any) => void },
-      val: any
+      val: any,
     ) {
       this.updateProp(prop, val)
     }
@@ -213,14 +214,16 @@ export const VideoStream = extendVue({
   }, {} as Record<string, any>),
   methods: {
     updateProp(key: string, value: any) {
-      if (!this.$refs.stream) return
+      if (!this.$refs.stream) {
+        return
+      }
       ;(this.$refs.stream as any)[key] = value
     },
     initialiseStream() {
-      this.streamScript =
-        this.streamScript ||
-        document.querySelector<HTMLScriptElement>(
-          `script[src="${scriptLocation}"]`
+      this.streamScript
+        = this.streamScript
+        || document.querySelector<HTMLScriptElement>(
+          `script[src="${scriptLocation}"]`,
         )
 
       if (!this.streamScript) {
@@ -244,8 +247,8 @@ export const VideoStream = extendVue({
       'div',
       {
         style: {
-          height: this.height ? this.height + 'px' : undefined,
-          width: this.width ? this.width + 'px' : undefined,
+          height: this.height ? `${this.height}px` : undefined,
+          width: this.width ? `${this.width}px` : undefined,
         },
         class: this.$attrs.class,
       },
@@ -263,41 +266,38 @@ export const VideoStream = extendVue({
             volume: this.volume,
             preload:
               typeof this.$attrs.preload === 'string'
-                ? // if it's a string pass as is
-                  this.$attrs.preload
-                : // else if it's true, map to auto
-                this.$attrs.preload === true
-                ? 'auto'
-                : // otherwise (undefined | false) maps to none
-                  'none',
+                ? this.$attrs.preload // if it's a string pass as is
+                : this.$attrs.preload === true // else if it's true, map to auto
+                  ? 'auto'
+                  : 'none', // otherwise (undefined | false) maps to none
           },
           on: this.$listeners,
           ref: 'stream',
           tag: 'stream',
         }),
-      ]
+      ],
     )
   },
   ...{
     head: {
       script: [
         {
-          src: scriptLocation,
+          'src': scriptLocation,
           'data-cfasync': false,
-          defer: true,
-          type: 'text/javascript',
-          hid: 'cloudflare-stream-script',
+          'defer': true,
+          'type': 'text/javascript',
+          'hid': 'cloudflare-stream-script',
         },
       ],
     },
     metaInfo: {
       script: [
         {
-          src: scriptLocation,
+          'src': scriptLocation,
           'data-cfasync': false,
-          defer: true,
-          type: 'text/javascript',
-          vmid: 'cloudflare-stream-script',
+          'defer': true,
+          'type': 'text/javascript',
+          'vmid': 'cloudflare-stream-script',
         },
       ],
     },
