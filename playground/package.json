@@ -1,0 +1,15 @@
+{
+  "name": "stream-vue-playground",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "latest",
+    "@vueuse/core": "^10.9.0",
+    "stream-vue": "latest",
+    "vite": "latest",
+    "vue": "latest"
+  }
+}

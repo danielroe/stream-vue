@@ -1,6 +1,4 @@
-import type Vue from 'vue'
-
-const extendVue: (typeof Vue)['extend'] = (options: any) => options
+import { defineComponent, h, onMounted, ref, watch } from 'vue'
 
 const scriptLocation
   = 'https://embed.videodelivery.net/embed/r4xu.fla9.latest.js'
@@ -14,16 +12,6 @@ declare global {
       initElement: (streamElement: HTMLStreamElement) => void
     }
   }
-}
-
-// eslint-disable-next-line ts/no-require-imports,ts/no-var-requires
-const _Vue = require('vue')
-
-if (_Vue.config) {
-  _Vue.config.ignoredElements = [
-    ...(_Vue.config.ignoredElements || []),
-    'stream',
-  ]
 }
 
 export type Events =
@@ -124,7 +112,7 @@ export type Events =
    */
   | 'stream-adtimeout'
 
-export const VideoStream = extendVue({
+export const VideoStream = defineComponent({
   name: 'VideoStream',
   props: {
     /**
@@ -148,7 +136,7 @@ export const VideoStream = extendVue({
      *
      * @default 0
      */
-    currentTime: { type: Number, default: 0 },
+    currentTime: { type: [String, Number], default: 0 },
     /**
      * The height of the video’s display area, in CSS pixels.
      */
@@ -186,63 +174,50 @@ export const VideoStream = extendVue({
      *
      * @default 1
      */
-    volume: { type: Number, default: 1 },
+    volume: { type: [String, Number], default: 1 },
   },
   inheritAttrs: false,
-  data: () => ({
-    streamScript: null as HTMLScriptElement | null,
-  }),
-  mounted() {
-    ;(this as any).initialiseStream()
-  },
-  watch: [
-    'autoplay',
-    'controls',
-    'currentTime',
-    'muted',
-    'loop',
-    'volume',
-    'preload',
-  ].reduce((obj, prop) => {
-    obj[prop] = function (
-      this: { updateProp: (key: string, value: any) => void },
-      val: any,
-    ) {
-      this.updateProp(prop, val)
-    }
-    return obj
-  }, {} as Record<string, any>),
-  methods: {
-    updateProp(key: string, value: any) {
-      if (!this.$refs.stream) {
+  setup(props) {
+    const streamScript = ref<HTMLScriptElement | null>(null)
+    const streamRef = ref<HTMLStreamElement | null>(null)
+
+    const updateableProps = ['autoplay', 'controls', 'currentTime', 'muted', 'loop', 'volume', 'preload'] as const
+
+    function updateProp(key: typeof updateableProps[number], value: unknown) {
+      if (!streamRef.value) {
         return
       }
-      ;(this.$refs.stream as any)[key] = value
-    },
-    initialiseStream() {
-      this.streamScript
-        = this.streamScript
-        || document.querySelector<HTMLScriptElement>(
-          `script[src="${scriptLocation}"]`,
-        )
 
-      if (!this.streamScript) {
-        const streamScript = document.createElement('script')
-        streamScript.setAttribute('data-cfasync', 'false')
-        streamScript.setAttribute('defer', 'true')
-        streamScript.setAttribute('type', 'text/javascript')
-        streamScript.setAttribute('src', scriptLocation)
-        document.head.appendChild(streamScript)
+      // @ts-expect-error type any is not assignable to type never
+      streamRef.value[key] = value as any
+    }
 
-        this.streamScript = streamScript
+    for (const key of updateableProps) {
+      watch(() => props[key], val => updateProp(key, val))
+    }
+
+    onMounted(() => {
+      streamScript.value ||= document.querySelector<HTMLScriptElement>(`script[src="${scriptLocation}"]`)
+
+      if (!streamScript.value) {
+        const scriptEl = document.createElement('script')
+        scriptEl.setAttribute('data-cfasync', 'false')
+        scriptEl.setAttribute('defer', 'true')
+        scriptEl.setAttribute('type', 'text/javascript')
+        scriptEl.setAttribute('src', scriptLocation)
+        document.head.appendChild(scriptEl)
+
+        streamScript.value = scriptEl
       }
 
-      if (window.__stream && this.$refs.stream) {
-        window.__stream.initElement(this.$refs.stream as HTMLStreamElement)
+      if (window.__stream && streamRef.value) {
+        window.__stream.initElement(streamRef.value)
       }
-    },
+    })
+
+    return { streamRef }
   },
-  render(h) {
+  render() {
     return h(
       'div',
       {
@@ -254,52 +229,25 @@ export const VideoStream = extendVue({
       },
       [
         h('stream', {
-          attrs: {
-            ...this.$attrs,
-            class: null,
-            style: null,
-            autoplay: this.autoplay,
-            controls: this.controls,
-            currentTime: this.currentTime,
-            muted: this.muted,
-            loop: this.loop,
-            volume: this.volume,
-            preload:
-              typeof this.$attrs.preload === 'string'
-                ? this.$attrs.preload // if it's a string pass as is
-                : this.$attrs.preload === true // else if it's true, map to auto
-                  ? 'auto'
-                  : 'none', // otherwise (undefined | false) maps to none
-          },
-          on: this.$listeners,
-          ref: 'stream',
-          tag: 'stream',
+          ...this.$attrs,
+          class: null,
+          style: null,
+          controls: this.controls ? 'controls' : null,
+          autoplay: this.autoplay || null,
+          currentTime: this.currentTime,
+          muted: this.muted || null,
+          loop: this.loop || null,
+          volume: this.volume,
+          preload:
+            typeof this.preload === 'string'
+              ? this.preload // if it's a string pass as is
+              : this.preload === true // else if it's true, map to auto
+                ? 'auto'
+                : 'none', // otherwise (undefined | false) maps to none
+          // on: this.$listeners,
+          ref: (el) => { this.streamRef = el as HTMLVideoElement },
         }),
       ],
     )
-  },
-  ...{
-    head: {
-      script: [
-        {
-          'src': scriptLocation,
-          'data-cfasync': false,
-          'defer': true,
-          'type': 'text/javascript',
-          'hid': 'cloudflare-stream-script',
-        },
-      ],
-    },
-    metaInfo: {
-      script: [
-        {
-          'src': scriptLocation,
-          'data-cfasync': false,
-          'defer': true,
-          'type': 'text/javascript',
-          'vmid': 'cloudflare-stream-script',
-        },
-      ],
-    },
   },
 })
