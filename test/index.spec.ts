@@ -2,11 +2,11 @@
 
 import { beforeEach, describe, expect, it } from 'vitest'
 import { mount } from '@vue/test-utils'
-import type { Wrapper } from '@vue/test-utils'
+import type { VueWrapper } from '@vue/test-utils'
 import { VideoStream } from '../src'
 
 describe('stream-vue', () => {
-  let wrapper: Wrapper<Vue>
+  let wrapper: VueWrapper
   beforeEach(() => {
     wrapper = mount(VideoStream, {
       propsData: {
