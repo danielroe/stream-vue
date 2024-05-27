@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`stream-vue > renders HTML 1`] = `
-"<div class="myclass" style="height: 200px; width: 500px;">
+"<div style="height: 200px; width: 500px;" class="myclass">
   <stream src="2938470a98fd7" controls="controls" currenttime="0" volume="1" preload="none"></stream>
 </div>"
 `;

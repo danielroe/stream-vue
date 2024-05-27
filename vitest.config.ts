@@ -1,6 +1,6 @@
 import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitest/config'
-import vuePlugin from '@vitejs/plugin-vue2'
+import vuePlugin from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vuePlugin()],
