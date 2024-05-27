@@ -1,6 +1,6 @@
 /** @vitest-environment jsdom */
 
-import { describe, beforeEach, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it } from 'vitest'
 import { mount } from '@vue/test-utils'
 import type { Wrapper } from '@vue/test-utils'
 import { VideoStream } from '../src'
