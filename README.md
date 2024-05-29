@@ -17,10 +17,6 @@
 
 **Note that this is not an official component.**
 
-## Features
-
-- Vetur autocomplete for props and events
-
 ## Quick Start
 
 First install `stream-vue`:
@@ -36,12 +32,8 @@ npm install stream-vue --save
 ## Usage
 
 ```vue
-<script>
+<script setup>
 import { VideoStream } from 'stream-vue'
-
-export default {
-  components: { VideoStream }
-}
 </script>
 
 <template>
@@ -52,6 +44,7 @@ export default {
 ### Nuxt support
 
 To use with Nuxt 2, make sure to add the following to your `nuxt.config.js`:
+
 ```js
 vue: {
   config: {

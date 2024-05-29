@@ -42,7 +42,7 @@
     "test:types": "tsc --noEmit"
   },
   "peerDependencies": {
-    "vue": "^3.4.0"
+    "vue": "^2.7.0 || ^3.4.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "latest",
