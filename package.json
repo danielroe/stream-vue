@@ -48,7 +48,7 @@
     "@antfu/eslint-config": "latest",
     "@types/jsdom": "21.1.6",
     "@types/node": "20.12.12",
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue": "5.0.4",
     "@vitest/coverage-v8": "1.6.0",
     "@vue/test-utils": "2.4.6",
     "bumpp": "9.4.1",
