@@ -47,7 +47,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "latest",
     "@types/jsdom": "21.1.7",
-    "@types/node": "22.10.2",
+    "@types/node": "22.10.3",
     "@vitejs/plugin-vue": "5.2.1",
     "@vitest/coverage-v8": "2.1.8",
     "@vue/test-utils": "2.4.6",
