@@ -67,7 +67,7 @@ importers:
         version: 5.2.1(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2))
       '@vueuse/core':
         specifier: ^12.0.0
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.3.0(typescript@5.7.2)
       stream-vue:
         specifier: link:..
         version: link:..
@@ -1081,14 +1081,14 @@ packages:
   '@vue/test-utils@2.4.6':
     resolution: {integrity: sha512-FMxEjOpYNYiFe0GkaHsnJPXFHxQ6m4t8vI/ElPGpMWxZKpmRvQ33OIrvRXemy6yha03RxhOlQuy+gZMC3CQSow==}
 
-  '@vueuse/core@12.2.0':
-    resolution: {integrity: sha512-jksyNu+5EGwggNkRWd6xX+8qBkYbmrwdFQMgCABsz+wq8bKF6w3soPFLB8vocFp3wFIzn0OYkSPM9JP+AFKwsg==}
+  '@vueuse/core@12.3.0':
+    resolution: {integrity: sha512-cnV8QDKZrsyKC7tWjPbeEUz2cD9sa9faxF2YkR8QqNwfofgbOhmfIgvSYmkp+ttSvfOw4E6hLcQx15mRPr0yBA==}
 
-  '@vueuse/metadata@12.2.0':
-    resolution: {integrity: sha512-x6zynZtTh1l52m0y8d/EgzpshnMjg8cNZ2KWoncJ62Z5qPSGoc4FUunmMVrrRM/I/5542rTEY89CGftngZvrkQ==}
+  '@vueuse/metadata@12.3.0':
+    resolution: {integrity: sha512-M/iQHHjMffOv2npsw2ihlUx1CTiBwPEgb7DzByLq7zpg1+Ke8r7s9p5ybUWc5OIeGewtpY4Xy0R2cKqFqM8hFg==}
 
-  '@vueuse/shared@12.2.0':
-    resolution: {integrity: sha512-SRr4AZwv/giS+EmyA1ZIzn3/iALjjnWAGaBNmoDTMEob9JwQaevAocuaMDnPAvU7Z35Y5g3CFRusCWgp1gVJ3Q==}
+  '@vueuse/shared@12.3.0':
+    resolution: {integrity: sha512-X3YD35GUeW0d5Gajcwv9jdLAJTV2Jdb/Ll6Ii2JIYcKLYZqv5wxyLeKtiQkqWmHg3v0J0ZWjDUMVOw2E7RCXfA==}
 
   abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
@@ -4194,18 +4194,18 @@ snapshots:
       js-beautify: 1.15.1
       vue-component-type-helpers: 2.1.10
 
-  '@vueuse/core@12.2.0(typescript@5.7.2)':
+  '@vueuse/core@12.3.0(typescript@5.7.2)':
     dependencies:
       '@types/web-bluetooth': 0.0.20
-      '@vueuse/metadata': 12.2.0
-      '@vueuse/shared': 12.2.0(typescript@5.7.2)
+      '@vueuse/metadata': 12.3.0
+      '@vueuse/shared': 12.3.0(typescript@5.7.2)
       vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
       - typescript
 
-  '@vueuse/metadata@12.2.0': {}
+  '@vueuse/metadata@12.3.0': {}
 
-  '@vueuse/shared@12.2.0(typescript@5.7.2)':
+  '@vueuse/shared@12.3.0(typescript@5.7.2)':
     dependencies:
       vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
