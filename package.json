@@ -51,7 +51,7 @@
     "@vitejs/plugin-vue": "5.2.1",
     "@vitest/coverage-v8": "3.0.2",
     "@vue/test-utils": "2.4.6",
-    "bumpp": "9.11.1",
+    "bumpp": "10.0.1",
     "eslint": "latest",
     "jsdom": "26.0.0",
     "lint-staged": "latest",
