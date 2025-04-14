@@ -53,7 +53,7 @@
     "@vue/test-utils": "2.4.6",
     "bumpp": "10.1.0",
     "eslint": "latest",
-    "jsdom": "26.0.0",
+    "jsdom": "26.1.0",
     "lint-staged": "latest",
     "simple-git-hooks": "latest",
     "typescript": "latest",
