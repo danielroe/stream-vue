@@ -2,7 +2,7 @@
   "name": "stream-vue",
   "type": "module",
   "version": "0.5.0",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.25.0",
   "description": "Cloudflare Stream component for VueJS",
   "author": {
     "name": "Daniel Roe <daniel@roe.dev>",
@@ -47,7 +47,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "latest",
     "@types/jsdom": "27.0.0",
-    "@types/node": "24.10.1",
+    "@types/node": "24.10.3",
     "@vitejs/plugin-vue": "6.0.2",
     "@vitest/coverage-v8": "4.0.14",
     "@vue/test-utils": "2.4.6",
