@@ -2,7 +2,7 @@
   "name": "stream-vue",
   "type": "module",
   "version": "0.5.0",
-  "packageManager": "pnpm@10.28.1",
+  "packageManager": "pnpm@10.28.2",
   "description": "Cloudflare Stream component for VueJS",
   "author": {
     "name": "Daniel Roe <daniel@roe.dev>",
