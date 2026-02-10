@@ -60,7 +60,7 @@
     "unbuild": "latest",
     "vite": "latest",
     "vitest": "latest",
-    "vue": "3.5.27"
+    "vue": "3.5.28"
   },
   "resolutions": {
     "stream-vue": "link:."
