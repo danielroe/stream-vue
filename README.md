@@ -2,14 +2,14 @@
 <p align="center">Vue component for Cloudflare Stream</p>
 
 <p align="center">
-<a href="https://npmjs.com/package/stream-vue">
-    <img alt="" src="https://img.shields.io/npm/v/stream-vue/latest.svg?style=flat-square">
+<a href="https://npmx.dev/package/stream-vue">
+    <img alt="" src="https://npmx.dev/api/registry/badge/version/stream-vue">
 </a>
 <a href="https://bundlephobia.com/result?p=stream-vue">
     <img alt="" src="https://img.shields.io/bundlephobia/minzip/stream-vue?style=flat-square">
 </a>
-<a href="https://npmjs.com/package/stream-vue">
-    <img alt="" src="https://img.shields.io/npm/dt/stream-vue.svg?style=flat-square">
+<a href="https://npmx.dev/package/stream-vue">
+    <img alt="" src="https://npmx.dev/api/registry/badge/downloads/stream-vue">
 </a>
 </p>
 
