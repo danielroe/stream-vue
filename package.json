@@ -62,9 +62,6 @@
     "vitest": "latest",
     "vue": "3.5.32"
   },
-  "resolutions": {
-    "stream-vue": "link:."
-  },
   "simple-git-hooks": {
     "pre-commit": "npx nano-staged"
   },
