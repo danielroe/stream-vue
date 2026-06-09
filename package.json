@@ -21,16 +21,15 @@
   ],
   "sideEffects": false,
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "unbuild",
+    "build": "tsdown",
     "dev": "vitest dev",
     "lint": "eslint . --fix",
     "prepare": "simple-git-hooks",
@@ -56,8 +55,8 @@
     "jsdom": "29.1.1",
     "nano-staged": "1.0.2",
     "simple-git-hooks": "latest",
+    "tsdown": "0.22.0",
     "typescript": "latest",
-    "unbuild": "latest",
     "vite": "latest",
     "vitest": "latest",
     "vue": "3.5.35"
@@ -69,5 +68,13 @@
     "*.{js,ts,mjs,cjs,json,.*rc}": [
       "pnpm eslint --fix"
     ]
+  },
+  "publishConfig": {
+    "exports": {
+      ".": "./dist/index.mjs",
+      "./package.json": "./package.json"
+    },
+    "main": "./dist/index.mjs",
+    "module": "./dist/index.mjs"
   }
 }
