@@ -1,9 +1,9 @@
 <script setup lang="ts">
 // https://github.com/cloudflare/stream-react/blob/master/example/src/index.tsx
 
+import { useLocalStorage } from '@vueuse/core'
 import { VideoStream } from 'stream-vue'
 import { ref } from 'vue'
-import { useLocalStorage } from '@vueuse/core'
 
 const videostream = ref<InstanceType<typeof VideoStream> | null>(null)
 function setTime() {

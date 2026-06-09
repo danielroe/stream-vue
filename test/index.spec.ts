@@ -1,8 +1,8 @@
 /** @vitest-environment jsdom */
 
-import { beforeEach, describe, expect, it } from 'vitest'
-import { mount } from '@vue/test-utils'
 import type { VueWrapper } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
+import { beforeEach, describe, expect, it } from 'vitest'
 import { VideoStream } from '../src'
 
 describe('stream-vue', () => {

@@ -13,10 +13,10 @@
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true,
     "declaration": true,
-    "isolatedDeclarations": true,
     "noEmit": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedDeclarations": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
