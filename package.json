@@ -57,7 +57,7 @@
     "typescript": "latest",
     "vite": "latest",
     "vitest": "latest",
-    "vue": "3.5.35"
+    "vue": "3.5.38"
   },
   "simple-git-hooks": {
     "pre-commit": "npx nano-staged"
