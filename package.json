@@ -47,7 +47,7 @@
     "@types/jsdom": "28.0.3",
     "@types/node": "24.13.2",
     "@vitejs/plugin-vue": "6.0.7",
-    "@vitest/coverage-v8": "4.1.8",
+    "@vitest/coverage-v8": "4.1.9",
     "@vue/test-utils": "2.4.11",
     "eslint": "latest",
     "jsdom": "29.1.1",
