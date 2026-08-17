@@ -43,7 +43,7 @@
     "vue": "^2.7.0 || ^3.4.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^9.1.0",
+    "@antfu/eslint-config": "9.3.0",
     "@types/jsdom": "28.0.3",
     "@types/node": "24.13.3",
     "@vitejs/plugin-vue": "6.0.8",
@@ -52,9 +52,9 @@
     "eslint": "10.6.0",
     "jsdom": "30.0.1",
     "nano-staged": "1.0.2",
-    "simple-git-hooks": "^2.13.1",
+    "simple-git-hooks": "2.13.1",
     "tsdown": "0.22.14",
-    "typescript": "^6.0.3",
+    "typescript": "6.0.3",
     "vite": "8.2.1",
     "vitest": "4.1.10",
     "vue": "3.5.41"

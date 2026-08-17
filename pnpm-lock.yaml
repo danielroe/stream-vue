@@ -12,7 +12,7 @@ importers:
   .:
     devDependencies:
       '@antfu/eslint-config':
-        specifier: ^9.1.0
+        specifier: 9.3.0
         version: 9.3.0(@typescript-eslint/typescript-estree@8.67.0(supports-color@7.2.0)(typescript@6.0.3))(@typescript-eslint/utils@8.67.0(eslint@10.6.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(@vue/compiler-sfc@3.5.41)(eslint@10.6.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)(vitest@4.1.10)
       '@types/jsdom':
         specifier: 28.0.3
@@ -39,13 +39,13 @@ importers:
         specifier: 1.0.2
         version: 1.0.2
       simple-git-hooks:
-        specifier: ^2.13.1
+        specifier: 2.13.1
         version: 2.13.1
       tsdown:
         specifier: 0.22.14
         version: 0.22.14(typescript@6.0.3)
       typescript:
-        specifier: ^6.0.3
+        specifier: 6.0.3
         version: 6.0.3
       vite:
         specifier: 8.2.1
