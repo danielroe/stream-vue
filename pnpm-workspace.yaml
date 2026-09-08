@@ -10,4 +10,4 @@ allowBuilds:
   simple-git-hooks: true
 
 overrides:
-  stream-vue: 'link:.'
+  stream-vue: 'workspace:*'
