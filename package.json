@@ -60,7 +60,7 @@
     "@vitejs/plugin-vue": "6.0.10",
     "@vitest/coverage-v8": "5.1.0",
     "@vue/test-utils": "2.5.0",
-    "eslint": "10.14.0",
+    "eslint": "10.15.0",
     "jsdom": "31.0.1",
     "nano-staged": "1.0.2",
     "simple-git-hooks": "2.14.0",
